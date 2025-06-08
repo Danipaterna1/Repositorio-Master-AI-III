@@ -1,0 +1,92 @@
+# ========================================
+# RAG System Configuration 2025
+# Renombra este archivo a: .env
+# ========================================
+
+# Environment Selection (development/production)
+RAG_ENVIRONMENT=development
+
+# ========================================
+# TIER 1: PRODUCTION APIs (Enterprise)
+# ========================================
+
+# Qdrant Vector Database (Production)
+QDRANT_URL=http://localhost:6333
+QDRANT_API_KEY=your_qdrant_api_key_here
+
+# Neo4j Graph Database (Production)
+NEO4J_URI=bolt://localhost:7687
+NEO4J_USER=neo4j
+NEO4J_PASSWORD=password123
+NEO4J_DATABASE=neo4j
+
+# ========================================
+# LLM APIs (Optional - for NER fallback)
+# ========================================
+
+# Google Gemini API
+GOOGLE_API_KEY=your_google_api_key_here
+
+# OpenAI API (alternative)
+OPENAI_API_KEY=your_openai_api_key_here
+
+# ========================================
+# Development Settings
+# ========================================
+
+# ChromaDB local path (development)
+CHROMADB_PATH=./data/chromadb
+
+# NetworkX cache path (development)
+NETWORKX_CACHE_PATH=./data/graphs
+
+# ========================================
+# Performance Tuning
+# ========================================
+
+# Embedding settings
+EMBEDDING_BATCH_SIZE=32
+EMBEDDING_USE_CPU=true
+
+# Chunking settings
+CHUNK_SIZE=1000
+CHUNK_OVERLAP=200
+
+# Search settings
+SIMILARITY_THRESHOLD=0.8
+MAX_SEARCH_RESULTS=10
+
+# ========================================
+# Monitoring & Logging
+# ========================================
+
+# Log level (DEBUG, INFO, WARNING, ERROR)
+LOG_LEVEL=INFO
+
+# Metrics collection
+ENABLE_METRICS=true
+METRICS_FILE=./data/metrics.json
+
+# ========================================
+# INSTRUCCIONES DE USO:
+# ========================================
+# 
+# 1. DESARROLLO (por defecto):
+#    - Solo necesitas cambiar RAG_ENVIRONMENT=development
+#    - Todo funciona sin APIs externas
+#
+# 2. PARA USAR GOOGLE GEMINI (NER avanzado):
+#    - Ve a: https://makersuite.google.com/app/apikey
+#    - Crea una API key
+#    - Reemplaza: GOOGLE_API_KEY=tu_key_real_aqui
+#
+# 3. PARA PRODUCCIÓN:
+#    - Cambia: RAG_ENVIRONMENT=production
+#    - Configura Qdrant y Neo4j
+#    - Actualiza las URLs y credentials
+#
+# 4. PARA HACER TESTS LOCALES:
+#    - Deja todo como está
+#    - Ejecuta: python test_rag_system.py
+#
+# ======================================== 

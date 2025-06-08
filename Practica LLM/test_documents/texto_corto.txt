@@ -1,0 +1,5 @@
+La inteligencia artificial está transformando el mundo.
+
+Los sistemas RAG combinan la potencia de los modelos de lenguaje con bases de datos vectoriales. Esto permite crear aplicaciones más inteligentes y contextuales.
+
+ChromaDB es perfecto para desarrollo rápido, mientras que Qdrant escala a nivel empresarial. 
