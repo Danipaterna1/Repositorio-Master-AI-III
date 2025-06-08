@@ -399,7 +399,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **📖 Documentation**: Check the [docs/](docs/) directory
 - **💬 Discussions**: GitHub Discussions
 - **🐛 Issues**: GitHub Issues
-- **📧 Email**: support@kingfisher-rag.com
+- **📧 Email**: danigommartinez@gmail.com
 
 ### **📊 Project Status**
 
